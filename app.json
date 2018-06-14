@@ -1,12 +1,32 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/setting/setting",
+    "pages/ddemo/ddemo"
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarBackgroundColor": "#000",
+    "navigationBarTitleText": "咪仔吖",
+    "navigationBarTextStyle":"#fff"
+  },
+  "tabBar": {
+    "list": [
+        {
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "selectedIconPath": "pages/icon/icon1s.png",
+            "iconPath": "pages/icon/icon1.png"
+        },
+        {
+            "pagePath": "pages/ddemo/ddemo",
+            "text": "我的设置",
+            "selectedIconPath": "pages/icon/icon2s.png",
+            "iconPath": "pages/icon/icon2.png"
+        }
+    ],
+    "color": "#808080",
+    "selectedColor": "#8B4513"
+}
 }

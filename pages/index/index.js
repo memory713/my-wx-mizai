@@ -5,6 +5,7 @@ const app = getApp()
 Page({
   data: {
     motto: 'Hello World',
+    mottoArr:[],
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')
@@ -16,6 +17,8 @@ Page({
     })
   },
   onLoad: function () {
+      
+     
     if (app.globalData.userInfo) {
       this.setData({
         userInfo: app.globalData.userInfo,
@@ -42,6 +45,10 @@ Page({
         }
       })
     }
+
+
+   
+    /**生成背景星星-结束 */
   },
   getUserInfo: function(e) {
     console.log(e)
