@@ -1,0 +1,40 @@
+/* pages/zhoubian/zhoubian.wxss */
+page{
+    background-color: #F0F0F0;
+}
+.box{
+    width:100%;
+    margin-bottom: 20rpx;
+    background-color: #fff;
+    padding:30rpx;
+    padding-left:60rpx;
+    padding-right:60rpx;
+    box-sizing: border-box;
+
+}
+
+.box-top{
+    display:flex;
+    justify-content: space-between;
+
+}
+.box-middle{
+    display:flex;
+    justify-content: left;
+    margin-top:10rpx;
+     margin-bottom:10rpx;
+    
+}
+.choose-type{
+  width:30%;
+  font-size:30rpx;
+  height:30rpx;
+  border:1px solid orange;
+  border-radius: 5px;
+}
+.tishi{
+  width:40%;
+  font-size: 30rpx;
+  height:50rpx;
+  line-height: 50rpx;
+}

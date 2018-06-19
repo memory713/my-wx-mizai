@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/zhoubian/zhoubian",
     "pages/setting/setting",
     "pages/ddemo/ddemo",
     "pages/index/index",

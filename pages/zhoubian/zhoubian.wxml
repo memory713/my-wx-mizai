@@ -1,0 +1,23 @@
+<!--pages/zhoubian/zhoubian.wxml-->
+
+<view class='box' style='padding-left:60rpx;padding-right:60rpx;color:#333333;'>
+    <view class='tishi'>想吃啥？</view>
+    <input value='haha' class='choose-type'></input>
+    <view class='queding'>去吧皮卡丘</view>
+</view>
+<view class='box' wx:for="{{box}}" wx:key>
+    <view class='box-top' style='60rpx;'>
+        <view style='font-size:32rpx;'>{{item.name}}</view>
+        <view style='font-size:25rpx;color:#808080;line-height:50rpx;'>距你 {{item.distance}}</view>
+    </view>
+    <view class='box-middle' wx:if="{{item.telephone}}" data-phoneMumber="{{item.telephone}}" bindtap='bodadianhua'>
+        <image src='../../images/phone.png' style='width:35rpx;height:35rpx;'></image>
+        <view style='font-size:25rpx;color:#808080'>{{item.telephone}}</view>
+    </view>
+    <view class='box-middle' bindtap='daohang' data-weidu="{{item.weidu}}" data-jingdu="{{item.jingdu}}">
+        <image src='../../images/location0.png' style='width:35rpx;height:35rpx;'></image>
+        <view style='font-size:25rpx;color:#808080'>{{item.address}}</view>
+    </view>
+    <view class='box-bottom' style='font-size:25rpx;color:#b2b2b2;'>标签：{{item.category}}</view>
+
+</view>
