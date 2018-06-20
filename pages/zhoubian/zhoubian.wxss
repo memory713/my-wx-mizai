@@ -26,15 +26,45 @@ page{
     
 }
 .choose-type{
-  width:30%;
+  width:70%;
   font-size:30rpx;
   height:30rpx;
   border:1px solid orange;
   border-radius: 5px;
 }
-.tishi{
-  width:40%;
+.queding{
+  margin-left: 5%;
+  border-radius: 20rpx;
+  text-align: center;
   font-size: 30rpx;
+  line-height: 25px;
+  color:orange;
+  width:20%;
+  border:1px solid orange;
+}
+.tishi{
+  /* width:40%; */
+  font-size: 30rpx;
+}
+.location{
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  font-size: 30rpx;
+  display: flex;
+  justify-content: space-between;
+  padding:20rpx;
+  box-sizing: border-box;
+  color:orange;
+}
+.location-word{
+   display: flex;
+}
+.location-new{
+  width: 20%;
   height:50rpx;
+  color:#808080;
+  border-radius: 10rpx;
+  text-align: center;
   line-height: 50rpx;
+  border:1px solid #808080;
 }

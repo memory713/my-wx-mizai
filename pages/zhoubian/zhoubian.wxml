@@ -1,23 +1,35 @@
 <!--pages/zhoubian/zhoubian.wxml-->
+<view class='location'>
+  <view class='location-word'>
+    <image src='../../images/icon_location.png' style='height:70rpx;width:70rpx;'></image>
+    <view class='location-name'>
+      <view style='color:orange;'>你的位置：</view>
+      <view>{{address}}</view>
+    </view>
+  </view>
 
+  <view bindtap='dingwei' class='location-new'>选择地址</view>
+</view>
 <view class='box' style='padding-left:60rpx;padding-right:60rpx;color:#333333;'>
-    <view class='tishi'>想吃啥？</view>
-    <input value='haha' class='choose-type'></input>
-    <view class='queding'>去吧皮卡丘</view>
+  <view class='tishi'>想吃啥？(输入餐厅的关键字，如寿司/火锅/黄焖鸡米饭等)</view>
+  <view style='display:flex;margin-top:20rpx;'>
+    <input value='{{haha}}' placeholder='输入想吃的东西' class='choose-type' bindinput='hahaValue'></input>
+    <view class='queding' bindtap='getValue'>确定</view>
+  </view>
 </view>
 <view class='box' wx:for="{{box}}" wx:key>
-    <view class='box-top' style='60rpx;'>
-        <view style='font-size:32rpx;'>{{item.name}}</view>
-        <view style='font-size:25rpx;color:#808080;line-height:50rpx;'>距你 {{item.distance}}</view>
-    </view>
-    <view class='box-middle' wx:if="{{item.telephone}}" data-phoneMumber="{{item.telephone}}" bindtap='bodadianhua'>
-        <image src='../../images/phone.png' style='width:35rpx;height:35rpx;'></image>
-        <view style='font-size:25rpx;color:#808080'>{{item.telephone}}</view>
-    </view>
-    <view class='box-middle' bindtap='daohang' data-weidu="{{item.weidu}}" data-jingdu="{{item.jingdu}}">
-        <image src='../../images/location0.png' style='width:35rpx;height:35rpx;'></image>
-        <view style='font-size:25rpx;color:#808080'>{{item.address}}</view>
-    </view>
-    <view class='box-bottom' style='font-size:25rpx;color:#b2b2b2;'>标签：{{item.category}}</view>
+  <view class='box-top' style='60rpx;'>
+    <view style='font-size:32rpx;'>{{item.name}}</view>
+    <view style='font-size:25rpx;color:#808080;line-height:50rpx;'>距你 {{item.distance}}</view>
+  </view>
+  <view class='box-middle' wx:if="{{item.telephone}}" data-phoneMumber="{{item.telephone}}" bindtap='bodadianhua'>
+    <image src='../../images/phone.png' style='width:35rpx;height:35rpx;'></image>
+    <view style='font-size:25rpx;color:#808080'>{{item.telephone}}</view>
+  </view>
+  <view class='box-middle' bindtap='daohang' data-weidu="{{item.weidu}}" data-jingdu="{{item.jingdu}}">
+    <image src='../../images/location0.png' style='width:35rpx;height:35rpx;'></image>
+    <view style='font-size:25rpx;color:#808080'>{{item.address}}</view>
+  </view>
+  <view class='box-bottom' style='font-size:25rpx;color:#b2b2b2;'>标签：{{item.category}}</view>
 
 </view>
