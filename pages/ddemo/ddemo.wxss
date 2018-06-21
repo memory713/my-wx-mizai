@@ -1,25 +1,14 @@
-page{background-color: #F6F1EB;width:100%;}
-.all{width:100%; display: flex;}
+page{background-color: #7666EA;width:100%;}
 .box{
-  margin-top:50rpx;
-  /* padding:20rpx; */
+  padding:20rpx;
   box-sizing: border-box;
-  width:33.33%;
-  
- 
-  
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.box image{
+  height:150rpx;
+  width:150rpx;
 }
 .box-nei{
-  width:90%;
-  margin-left: 5%;
-  text-align: center;
-  /* box-shadow: 5px 5px 5px #888888; */
-  color:#4E5F94;
-}
-.box-nei image{
-  width:150rpx;
-   height:150rpx; 
-   border-radius: 50%;
-   
-  margin:0 auto;
+  margin-left: 20rpx;
 }

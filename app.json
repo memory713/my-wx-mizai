@@ -1,12 +1,14 @@
 {
   "pages":[
-    "pages/zhoubian/zhoubian",
-    "pages/setting/setting",
+    "pages/aboutme/aboutme",
     "pages/ddemo/ddemo",
     "pages/index/index",
-    "pages/logs/logs"
+   
    
     
+    "pages/zhoubian/zhoubian",
+    "pages/setting/setting",
+    "pages/logs/logs"  
   ],
   "window":{
     "backgroundTextStyle":"light",

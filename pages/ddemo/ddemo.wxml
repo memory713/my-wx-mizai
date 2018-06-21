@@ -1,22 +1,21 @@
 <view class='all'>
-  <view class='box'>
+  <view class='box' bindtap='aboutMe'>
+    <image src='../../images/aaa.jpg' ></image>
     <view class='box-nei'>
-      <image src='../../images/shehui.jpg' ></image>
-      <view>about me</view>
+      <view style='font-size:45rpx;color:#fff;'>about me</view>
+      <view style='color:#ccc;font-size:25rpx;'>my name is LW</view>
+      <view style='color:#ccc;font-size:25rpx;'>this is a personal traditions</view>
+       <view style='color:#ccc;font-size:25rpx;'>you can click that to know more about me</view>
     </view>
   </view>
   <view class='box'>
+   <image src='../../images/timg.jpg'></image>
     <view class='box-nei' bindtap='whichFood'>
-      <image src='../../images/touxiang.jpg'></image>
+     
       <view>which food</view>
     </view>
   </view>
-  <view class='box'>
-    <view class='box-nei'>
-      <image src='../../images/touxiang.jpg'></image>
-      <view>今天吃什么</view>
-    </view>
-  </view>
+
 
 
 </view>

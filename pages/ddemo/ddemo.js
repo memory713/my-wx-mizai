@@ -4,10 +4,14 @@ Page({
   },
   whichFood:function(){
     wx.navigateTo({
-      url: '../setting/setting',
-      
+      url: '../zhoubian/zhoubian',
     }) 
 
+  },
+  aboutMe:function(){
+    wx.navigateTo({
+      url: '../aboutme/aboutme',
+    }) 
   },
 
   onLoad: function() {

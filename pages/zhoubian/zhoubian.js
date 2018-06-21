@@ -127,8 +127,7 @@ Page({
       })
       // 调用接口
       qqmapsdk.search({
-        keyword:"菜饭" ,
-        // that.data.haha
+        keyword: that.data.haha ,
         location:{
           latitude: that.data.latitude,
           longitude: that.data.longitude

@@ -1,0 +1,172 @@
+<!--pages/aboutme/aboutme.wxml-->
+<view class='bottom'>
+  <view class='bottom-box-all' style='padding-left:0rpx;' data-current="1" bindtap='chooseTab'>
+    <view class="bottom-box {{_num1?'cur':''}}">
+      <image src='../../images/about1.png'></image>
+      <view class='bottom-name'>personal</view>
+    </view>
+  </view>
+  <view class='bottom-box-all' data-current="2" bindtap='chooseTab'>
+    <view class="bottom-box {{_num2?'cur':''}}">
+      <image src='../../images/about2.png'></image>
+      <view class="bottom-name ">personal</view>
+    </view>
+  </view>
+  <view class='bottom-box-all' data-current="3" bindtap='chooseTab'>
+    <view class="bottom-box {{_num3?'cur':''}}">
+      <image src='../../images/about3.png'></image>
+      <view class='bottom-name'>personal</view>
+    </view>
+  </view>
+  <view class='bottom-box-all' data-current="4" bindtap='chooseTab'>
+    <view class="bottom-box {{_num4?'cur':''}}">
+      <image src='../../images/about4.png'></image>
+      <view class='bottom-name'>技能</view>
+    </view>
+  </view>
+</view>
+<view class='page1-top'>
+  <image src='../../images/aaa.jpg'></image>
+  <view class='page1-top-right'>
+    <view>李雯</view>
+    <view>1992/06/04</view>
+    <view>浙江大学宁波理工学院 生物技术</view>
+    <view>工作：2016年~至今</view>
+  </view>
+</view>
+<view class='page1' wx:if="{{_num1}}">
+  <view class='page1-body'>
+    <view class='page1-body-box'>
+      <image src='../../images/about1.png'></image>
+      <view class='page1-body-box-word'>
+        <view class='page1-word-title'>关于我</view>
+        <view>前端工程师，自学入坑，工作经验两年余。</view>
+        <view>对一切未知的事物保持好奇并热爱尝试。</view>
+      </view>
+    </view>
+    <view class='page1-body-box'>
+      <image src='../../images/about2.png' style='height: 80rpx;width: 80rpx;margin:20rpx;'></image>
+      <view class='page1-body-box-word'>
+        <view style='' class='page1-word-title'>个人作品</view>
+        <view style=''>https://github.com/memory713</view>
+        <view>微信小程序</view>
+      </view>
+    </view>
+    <view class='page1-body-box'>
+      <image src='../../images/about3.png' style='height: 80rpx;width: 80rpx;margin:20rpx;'></image>
+      <view class='page1-body-box-word'>
+        <view class='page1-word-title'>个人技能</view>
+        <view>photoshop/html5/css3/jsvascript/</view>
+        <view>jquery/angularJS/vueJS</view>
+      </view>
+    </view>
+    <view class='page1-body-box'>
+      <image src='../../images/about4.png'></image>
+      <view class='page1-body-box-word'>
+        <view class='page1-word-title'>联系方式</view>
+        <view>wx:13958243103</view>
+        <view>email:983348993@qq.com</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='page1' wx:if="{{_num2}}">
+  <view class='page1-body'>
+    <view class='page1-body-box'>
+      <image src='../../images/about1.png'></image>
+      <view class='page1-body-box-word'>
+        <view class='page1-word-title'></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+    <view class='page1-body-box'>
+      <image src='../../images/about2.png' style='height: 80rpx;width: 80rpx;margin:20rpx;'></image>
+      <view class='page1-body-box-word'>
+        <view style='' class='page1-word-title'></view>
+        <view style=''>https://github.com/</view>
+        <view></view>
+      </view>
+    </view>
+    <view class='page1-body-box'>
+      <image src='../../images/about3.png' style='height: 80rpx;width: 80rpx;margin:20rpx;'></image>
+      <view class='page1-body-box-word'>
+        <view class='page1-word-title'></view>
+        <view>photoshop/html5/css3/jsvascript/</view>
+        <view>jquery/angularJS/vueJS</view>
+      </view>
+    </view>
+    <view class='page1-body-box'>
+      <image src='../../images/about4.png'></image>
+      <view class='page1-body-box-word'>
+        <view class='page1-word-title'></view>
+        <view>wx:</view>
+        <view>email:@qq.com</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='page1' wx:if="{{_num3}}">
+  <view>aaaaa</view>
+</view>
+<view class='page4' wx:if="{{_num4}}">
+  <view class='page4-line'>
+    <image src='../../images/html5.png'></image>
+    <view class='page4-line-right'>
+      <view class='page4-line-right-title'>html5</view>
+      <progress percent="90" color="blue" stroke-width="5" backgroundColor="#fff" activeColor="#002B4B" active="true" />
+    </view>
+  </view>
+
+  <view class='page4-line'>
+    <image src='../../images/social-css3.png'></image>
+    <view class='page4-line-right'>
+      <view class='page4-line-right-title'>css3</view>
+      <progress percent="88" color="blue" stroke-width="5" backgroundColor="#fff" activeColor="#002B4B" active="true" />
+    </view>
+  </view>
+
+  <view class='page4-line'>
+    <image src='../../images/javascript.png'></image>
+    <view class='page4-line-right'>
+      <view class='page4-line-right-title'>javascript</view>
+      <progress percent="70" color="blue" stroke-width="5" backgroundColor="#fff" activeColor="#002B4B" active="true" />
+    </view>
+  </view>
+
+  <view class='page4-line'>
+    <image src='../../images/jquery.png'></image>
+    <view class='page4-line-right'>
+      <view class='page4-line-right-title'>jquery</view>
+      <progress percent="85" color="blue" stroke-width="5" backgroundColor="#fff" activeColor="#002B4B" active="true" />
+    </view>
+  </view>
+
+  <view class='page4-line'>
+    <image src='../../images/angular.png'></image>
+    <view class='page4-line-right'>
+      <view class='page4-line-right-title'>angular</view>
+      <progress percent="40" color="blue" stroke-width="5" backgroundColor="#fff" activeColor="#002B4B" active="true" />
+    </view>
+  </view>
+
+  <view class='page4-line'>
+    <image src='../../images/vuejs.png'></image>
+    <view class='page4-line-right'>
+      <view class='page4-line-right-title'>vuejs</view>
+      <progress percent="60" color="blue" stroke-width="5" backgroundColor="#fff" activeColor="#002B4B" active="true"/>
+    </view>
+  </view>
+
+  <view class='page4-line'>
+    <image src='../../images/nodejs.png'></image>
+    <view class='page4-line-right'>
+      <view class='page4-line-right-title'>nodejs</view>
+      <progress percent="20" color="blue" stroke-width="5" backgroundColor="#fff" activeColor="#002B4B"  active="true"/>
+    </view>
+  </view>
+
+
+</view>
