@@ -3,19 +3,19 @@
   <view class='bottom-box-all' style='padding-left:0rpx;' data-current="1" bindtap='chooseTab'>
     <view class="bottom-box {{_num1?'cur':''}}">
       <image src='../../images/about1.png'></image>
-      <view class='bottom-name'>personal</view>
+      <view class='bottom-name'>个人</view>
     </view>
   </view>
   <view class='bottom-box-all' data-current="2" bindtap='chooseTab'>
     <view class="bottom-box {{_num2?'cur':''}}">
       <image src='../../images/about2.png'></image>
-      <view class="bottom-name ">personal</view>
+      <view class="bottom-name ">作品</view>
     </view>
   </view>
   <view class='bottom-box-all' data-current="3" bindtap='chooseTab'>
     <view class="bottom-box {{_num3?'cur':''}}">
       <image src='../../images/about3.png'></image>
-      <view class='bottom-name'>personal</view>
+      <view class='bottom-name'>经历</view>
     </view>
   </view>
   <view class='bottom-box-all' data-current="4" bindtap='chooseTab'>
@@ -49,7 +49,7 @@
       <view class='page1-body-box-word'>
         <view style='' class='page1-word-title'>个人作品</view>
         <view style=''>https://github.com/memory713</view>
-        <view>微信小程序</view>
+       
       </view>
     </view>
     <view class='page1-body-box'>
@@ -71,45 +71,69 @@
   </view>
 </view>
 
-<view class='page1' wx:if="{{_num2}}">
-  <view class='page1-body'>
-    <view class='page1-body-box'>
-      <image src='../../images/about1.png'></image>
-      <view class='page1-body-box-word'>
-        <view class='page1-word-title'></view>
-        <view></view>
-        <view></view>
-      </view>
+<view class='page2' wx:if="{{_num2}}">
+  <view class='page2-body'>
+    <view style='text-align:center;'>
+      <image src='../../images/2weima.jpg' style='margin:0 auto;height:200rpx;width:200rpx;'></image>
     </view>
-    <view class='page1-body-box'>
-      <image src='../../images/about2.png' style='height: 80rpx;width: 80rpx;margin:20rpx;'></image>
-      <view class='page1-body-box-word'>
-        <view style='' class='page1-word-title'></view>
-        <view style=''>https://github.com/</view>
-        <view></view>
-      </view>
+
+    <view class='page2-words'>
+      <view >1.微社区：（vueJS开发的h5页面）</view>
+      <view >http://sq.emjiayuan.com</view>
+      <view style='word-wrap:break-word;'>GITHUB：https://github.com/memory713/communityForShopTown</view>
+      <view>关注上方公众号可直接进入</view>
     </view>
-    <view class='page1-body-box'>
-      <image src='../../images/about3.png' style='height: 80rpx;width: 80rpx;margin:20rpx;'></image>
-      <view class='page1-body-box-word'>
-        <view class='page1-word-title'></view>
-        <view>photoshop/html5/css3/jsvascript/</view>
-        <view>jquery/angularJS/vueJS</view>
-      </view>
+
+    <view class='page2-words'>
+      <view >2.配料大师：（小程序）</view>
+      <view style='word-wrap:break-word;'>GITHUB：https://github.com/memory713/WeChatProgram_shop_yimujiayuan</view>
+      <view>关注上方公众号可直接进入</view>
     </view>
-    <view class='page1-body-box'>
-      <image src='../../images/about4.png'></image>
-      <view class='page1-body-box-word'>
-        <view class='page1-word-title'></view>
-        <view>wx:</view>
-        <view>email:@qq.com</view>
-      </view>
+
+    <view class='page2-words'>
+      <view >3.斋月导航：（小程序）</view>
+      <view style='word-wrap:break-word;'>GITHUB：无</view>
+      <view>关注上方公众号可直接进入</view>
     </view>
+
   </view>
 </view>
 
 <view class='page1' wx:if="{{_num3}}">
-  <view>aaaaa</view>
+  <view class='page3-all'>
+    <view style='color:#fff;padding-bottom:50rpx;'>求职意向：前端工程师</view>
+    <view class='page3-title' style='height: 20rpx;'>
+      <image src='../../images/time.png'></image>
+      <view class='page3-words' style='color:#fff;font-size:40rpx;top:-35rpx;'>工作经历</view>
+    </view>
+    <view class='page3-title'>
+      <view class='page3-yuan'></view>
+      <text class='page3-words' space="ensp">2016.09 ~ 2017.09 \n \n宁波夏天信息科技有限公司 \n职位：前端工程师 \n \n工作内容：\n1.  使用墨刀制作手机APP原型图，设计交互\n2.  html、css、javascript、jquery 负责公司官网页面制作 \n3.  需求分析 \n4.  页面整改</text>
+    </view>
+    <view class='page3-title'>
+      <view class='page3-yuan'></view>
+      <text class='page3-words' space="ensp">2017.10 ~ 2018.04 \n \n宁波极望信息技术有限公司 \n职位：前端工程师 \n \n工作内容： \n1.  使用Echats,为企业定制网页端数据可视化图表 \n2.  基于APICloud实现H5手机APP 并可以运行在androd和IOS系统上 \n3.  熟练运用angularJS为企业定制H5商城\n4.  制作企业官网 </text>
+    </view>
+    <view class='page3-title'>
+      <view class='page3-yuan'></view>
+      <text class='page3-words' space="ensp">2018.05 ~ 至今\n \n西北梦电子商务有限公司 \n职位：前端工程师 \n \n工作内容： \n1.  制作微信商城小程序 \n2.  基于公司主营群体制作服务类小程序 \n3.  使用vueJS制作基于微信内置浏览器的H5页面，微社区功能页面，使用单页面路由，页面流畅交互清晰，大大改善用户体验\n4.  重构企业官网，使用Echats图表和Canvas，更有科技感</text>
+    </view>
+
+    <view class='page3-title' style='border:none;margin-top:100rpx;height:50rpx;'>
+      <image src='../../images/time2.png'></image>
+      <view class='page3-words' style='color:#fff;font-size:40rpx;top:-35rpx;'>自我评价</view>
+    </view>
+    <text style='font-size:25rpx;' space="ensp">1.  责任心强，自学能力强\n2.  喜欢挑战，对前端行业由衷的热爱\n3.  喜欢新的技术，对新鲜事物保持强烈的好奇心\n4.  不喜欢规规矩矩一板一眼的工作氛围</text>
+
+    <view class='page3-title' style='border:none;margin-top:100rpx;height:50rpx;'>
+      <image src='../../images/place.png'></image>
+      <view class='page3-words' style='color:#fff;font-size:40rpx;top:-35rpx;'>期望薪资及细节</view>
+    </view>
+    <text style='font-size:25rpx;' space="ensp">1.  不喜欢无偿加班，若有偿加班我倒很喜欢\n2.  希望公司在技术上重视，有成熟的团队\n3.  苏州：期望工资8k+  宁波镇海：8k+  杭州：12K+\n  </text>
+
+
+  </view>
+
 </view>
 <view class='page4' wx:if="{{_num4}}">
   <view class='page4-line'>
@@ -156,7 +180,7 @@
     <image src='../../images/vuejs.png'></image>
     <view class='page4-line-right'>
       <view class='page4-line-right-title'>vuejs</view>
-      <progress percent="60" color="blue" stroke-width="5" backgroundColor="#fff" activeColor="#002B4B" active="true"/>
+      <progress percent="60" color="blue" stroke-width="5" backgroundColor="#fff" activeColor="#002B4B" active="true" />
     </view>
   </view>
 
@@ -164,7 +188,7 @@
     <image src='../../images/nodejs.png'></image>
     <view class='page4-line-right'>
       <view class='page4-line-right-title'>nodejs</view>
-      <progress percent="20" color="blue" stroke-width="5" backgroundColor="#fff" activeColor="#002B4B"  active="true"/>
+      <progress percent="20" color="blue" stroke-width="5" backgroundColor="#fff" activeColor="#002B4B" active="true" />
     </view>
   </view>
 

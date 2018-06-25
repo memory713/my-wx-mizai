@@ -6,7 +6,7 @@ Page({
    */
   data: {
    
-    _num4:true,
+    _num1:true,
     tag:50
   
   },

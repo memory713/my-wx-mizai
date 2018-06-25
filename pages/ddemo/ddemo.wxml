@@ -1,20 +1,33 @@
 <view class='all'>
-  <view class='box' bindtap='aboutMe'>
-    <image src='../../images/aaa.jpg' ></image>
-    <view class='box-nei'>
-      <view style='font-size:45rpx;color:#fff;'>about me</view>
-      <view style='color:#ccc;font-size:25rpx;'>my name is LW</view>
-      <view style='color:#ccc;font-size:25rpx;'>this is a personal traditions</view>
-       <view style='color:#ccc;font-size:25rpx;'>you can click that to know more about me</view>
-    </view>
+
+  <view class="sky">
+    <view class="clouds_one"></view>
+    <view class="clouds_two"></view>
+    <view class="clouds_three"></view>
   </view>
-  <view class='box'>
-   <image src='../../images/timg.jpg'></image>
+
+  <view class='box' bindtap='aboutMe'>
+    know about me
+    
+  </view>
+
+  <view class='box2' wx:if="{{tanchuang}}" >
+  <view style='margin:20rpx;'>Where do you come from?</view>
+    <input placeholder='' bindinput='valueInput' value='{{haha}}' ></input>
+    <view class='box2-button'>
+      <view style='border-right:1rpx solid #ccc;' bindtap='quxiao'>取消</view>
+      <view bindtap='sure'>确定</view>
+
+    </view>
+    
+  </view>
+  <!-- <view class='box'>
+    <image src='../../images/timg.jpg'></image>
     <view class='box-nei' bindtap='whichFood'>
-     
+
       <view>which food</view>
     </view>
-  </view>
+  </view> -->
 
 
 
