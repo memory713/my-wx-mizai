@@ -12,7 +12,7 @@
   </view>
 
   <view class='box2' wx:if="{{tanchuang}}" >
-  <view style='margin:20rpx;'>Where do you come from?</view>
+  <view style='margin:20rpx;'>Where are you come from?</view>
     <input placeholder='' bindinput='valueInput' value='{{haha}}' ></input>
     <view class='box2-button'>
       <view style='border-right:1rpx solid #ccc;' bindtap='quxiao'>取消</view>

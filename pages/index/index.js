@@ -10,7 +10,7 @@ Page({
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
     title: "ddemo",
-    currentIndex: 0,
+    currentIndex: 1,
     oldIndex: 0,
     view: [{ in: "",
         out: ""
@@ -26,68 +26,11 @@ Page({
       url: '../logs/logs'
     })
   },
-  touchStart: function(t) {
-    this.setData({
-      startX: t.changedTouches[0].clientX
-    })
-  },
-  touchEnd: function(t) {
-    var e = this,
-      n = this.data.view;
-    this.setData({
-      endX: t.changedTouches[0].clientX
-    });
-    var a = t.changedTouches[0].clientX - this.data.startX;
-    if (a < -100) {
-      if (this.data.currentIndex >= 1) return;
-      this.setData({
-          oldIndex: e.data.currentIndex,
-          currentIndex: ++e.data.currentIndex
-        }),
-        n[this.data.oldIndex].out = "animated fadeOutLeft",
-        n[this.data.oldIndex].in = "",
-        n[this.data.currentIndex].in = "animated fadeInRight",
-        n[this.data.currentIndex].out = "",
-        this.setData({
-          view: n
-        }),
-        this.cleanAnimated(), this.showAnimated()
-    } else if (a > 100) {
-      if (this.data.currentIndex <= 0) return;
-      this.setData({
-          oldIndex: e.data.currentIndex,
-          currentIndex: --e.data.currentIndex
-        }),
-        n[this.data.oldIndex].out = "animated fadeOutRight",
-        n[this.data.oldIndex].in = "",
-        n[this.data.currentIndex].in = "animated fadeInLeft",
-        n[this.data.currentIndex].out = "",
-        this.setData({
-          view: n
-        }),
-        this.cleanAnimated(), this.showAnimated()
-    }
-  },
+ 
+
   showAnimated: function() {
     var t = this;
-    0 === this.data.currentIndex ? (setTimeout(function() {
-      t.setData({
-        one_one: "animated fadeIn",
-        one_two: "animated bounceIn"
-      })
-    }, 1e3), setTimeout(function() {
-      t.setData({
-        one_three: "animated bounceIn"
-      })
-    }, 1500), setTimeout(function() {
-      t.setData({
-        one_four: "animated bounceIn"
-      })
-    }, 1800), setTimeout(function() {
-      t.setData({
-        one_five: "animated lightSpeedIn"
-      })
-    }, 1900)) : 1 === this.data.currentIndex && (setTimeout(function() {
+     1 === this.data.currentIndex && (setTimeout(function() {
       t.setData({
         two_one: "animated fadeInDown",
         two_two: "animated fadeInUp"
@@ -149,6 +92,8 @@ Page({
         }
       })
     }
+
+
     
 
 

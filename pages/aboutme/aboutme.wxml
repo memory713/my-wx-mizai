@@ -74,7 +74,8 @@
 <view class='page2' wx:if="{{_num2}}">
   <view class='page2-body'>
     <view style='text-align:center;'>
-      <image src='../../images/2weima.jpg' style='margin:0 auto;height:200rpx;width:200rpx;'></image>
+      <image    wx:for="{{dImgaaa}}"  src='{{item}}' bindtap="imgYu" data-list="{{dImgaaa}}" data-src="{{item}}" wx:key   style='margin:0 auto;height:200rpx;width:200rpx;'></image>
+     
     </view>
 
     <view class='page2-words'>
